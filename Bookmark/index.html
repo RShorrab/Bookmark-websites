@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Bookmark</title>
+    </head>
+    <body>
+        <h1 class="m-3 position-relative text-light">B<span id="animatedO">o</span><span id="restLogo">okmark</span></h1>
+        <div class="container mt-5">
+            <div class="m-auto mb-5 text-center bg-light bg-opacity-25 rounded shadow">
+                <div class="inputs mb-3 p-4 ">
+                    <label class="mb-3">Web Name</label> <br>
+                    <input id="webNameInput" class="form-control">
+                </div>
+                <div class="inputs p-4">
+                    <label class="mb-3">Web URL</label> <br>
+                    <input id="webURLInput" class="form-control">
+                    <div  id="urlAlert" class="alert alert-danger d-none mt-3 p-0 pt-2"> 
+                        <p>Note: Web URL shold be something like: example.com</p> 
+                    </div>
+                </div>
+                <button id="addBtn" class="btn btn-danger mb-3" disabled>Bookmark</button>
+            </div>
+
+            <div id="displayDiv" class="bg-light bg-opacity-25 mt-4 p-3 rounded shadow d-none">
+                <input id="searchBar" class="form-control mb-3" placeholder="search by name">
+                <table class="table bg-light table-striped mb-1">
+                    <thead class="text-center">
+                        <th>Web Name</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="tableBody" class="text-center ">
+    
+                    </tbody>
+                </table>
+            </div>    
+        </div>
+
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
